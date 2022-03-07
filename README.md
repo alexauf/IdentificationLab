@@ -1,4 +1,9 @@
 # IdentificationLab
+
+## Install python dependencies
+```
+pip install -r requirements.txt
+```
 ## Install Django
 I think the only thing needed to run a django server is to install Django, if you are a pussy and have Windows as OS you can do:
 ```
