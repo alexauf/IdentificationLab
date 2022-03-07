@@ -32,4 +32,4 @@ http://localhost:8000/accounts/log-in/
 <br />
 
 ## NOTES
-In this project has been used python3
+In this project python3 has been used 
