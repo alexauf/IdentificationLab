@@ -1,0 +1,47 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% load socialaccount %}  <!-- To add login with Google -->
+
+{% block content %}
+
+    <h4>{% trans 'Log in' %}</h4>
+
+    <form method="post">
+
+        {% csrf_token %}
+        {% bootstrap_form form %}
+
+        <button class="btn btn-primary">{% trans 'Log in' %}</button>
+
+    </form>
+
+    <hr>
+
+    <ul>
+        <li>
+            <a href="{% url 'accounts:restore_password' %}">{% trans 'Forgot your password?' %}</a>
+        </li>
+        <li>
+            <a href="{% url 'accounts:remind_username' %}">{% trans 'Forgot your username?' %}</a>
+        </li>
+        <li>
+            <a href="{% url 'accounts:resend_activation_code' %}">{% trans 'Resend an activation code' %}</a>
+        </li>
+    </ul>
+
+    <div>
+      <div class="google-btn">
+          <a href="{% provider_login_url 'google' %}">
+              <div class="google-icon-wrapper">
+                  <img class="google-icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+              </div>
+              <p class="btn-text"><b>Sign in with Google</b></p>
+          </a>
+      </div>
+    </div>
+
+{% endblock %}
