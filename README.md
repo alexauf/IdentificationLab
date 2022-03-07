@@ -28,3 +28,6 @@ You can try the login with OAuth2.0 in the following page:
 ```
 http://localhost:8000/accounts/log-in/
 ```
+
+## NOTES
+In this project has been used python3
