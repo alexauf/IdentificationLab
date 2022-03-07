@@ -4,6 +4,7 @@
 ```
 pip install -r requirements.txt
 ```
+<br />
 
 ## Run Django
 Go to the directory [**source/**](https://github.com/alexauf/IdentificationLab/tree/main/source)
@@ -28,6 +29,7 @@ You can try the login with OAuth2.0 in the following page:
 ```
 http://localhost:8000/accounts/log-in/
 ```
+<br />
 
 ## NOTES
 In this project has been used python3
